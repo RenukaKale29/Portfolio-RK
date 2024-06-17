@@ -27,214 +27,193 @@
       /*======================================
 //--//   ABOUT
 ======================================*/
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
-      .about-mf .box-shadow-full {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-      }
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
 
-      .about-mf .about-img {
-        margin-bottom: 2rem;
-      }
+.about-mf .about-img img {
+  width: 100%;
+  height: auto;
+  margin-left: 10px;
+}
 
-      .about-mf .about-img img {
-        margin-left: 10px;
-      }
+.skill-mf .progress {
+  margin: 0.5rem 0 1.2rem;
+  border-radius: 0;
+  height: 0.7rem;
+}
 
-      .skill-mf .progress {
-        /* background-color: #cde1f8; */
-        margin: 0.5rem 0 1.2rem;
-        border-radius: 0;
-        height: 0.7rem;
-      }
+.skill-mf .progress .progress-bar {
+  height: 0.7rem;
+  background-color: #d00ff2;
+}
 
-      .skill-mf .progress .progress-bar {
-        height: 0.7rem;
-        background-color: #d00ff2;
-      }
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
 
-      /* Animation styles */
-      #typing-animation {
-        position: relative;
-        font-size: 30px;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        overflow: hidden;
-        white-space: nowrap;
-        animation: typing 3s steps(20, end) infinite;
-      }
+#typing-animation:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
 
-      #typing-animation:before {
-        content: "";
-        /* position: absolute; */
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background-color: #ccc;
-        animation: typing-cursor 0.5s ease-in-out infinite;
-      }
-      img {
-            width: 100%;
-            height: auto;
-        }
-
-        @media (max-width: 768px) {
-            .custom-width {
-                width: 100%;
-            }
-            .about-img img {
-                width: 100%;
-                margin: 0 auto;
-            }
-            .one-third {
-                width: 100%;
-            }
-        }
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-
-        to {
-          width: 100%;
-        }
-      }
-
-      @keyframes typing-cursor {
-        from {
-          width: 5px;
-        }
-
-        to {
-          width: 0;
-        }
-      }
-      .custom-width {
-    width: 50%; /* Adjust the percentage as needed */
-  }
-      /* project image zoom effect */
-      /* body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-  } */
-
-  .container {
-      margin-top: 20px;
+@keyframes typing {
+  from {
+    width: 0;
   }
 
-  .card {
-      border: none;
-      margin-bottom: 20px;
-      background-color: #d493d1;
+  to {
+    width: 100%;
+  }
+}
 
+@keyframes typing-cursor {
+  from {
+    width: 5px;
   }
 
-  .card-body {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;  }
-
-  .card-video {
-      width: 100%;
-      /* height: 200px; */
-      height: auto;
-      object-fit: cover;
+  to {
+    width: 0;
   }
+}
 
-  .card-title {
-            font-size: 18px;
-            font-weight: 600;
-            color: #020407; /* Set text color here */
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
+.custom-width {
+  width: 50%;
+}
 
-  .card-text {
-      font-size: 14px;
-      margin-bottom: 20px;
-    color: #1a1919;
-  }
-  .projects-headline {
+/* project image zoom effect */
+.container {
+  margin-top: 20px;
+}
+
+.card {
+  border: none;
+  margin-bottom: 20px;
+  background-color: #d493d1;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #020407;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-text {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #1a1919;
+}
+
+.projects-headline {
   font-size: 42px;
   font-weight: bold;
-  /* margin-top: 210px; */
   text-align: center;
-  color:#a216b5;
+  color: #a216b5;
 }
-  .btn-github {
-    
-      background-color: #1a1919;
-      color: #d57df5;
-  }
 
-  .btn-github:hover {
-      background-color: #b456b0;
-      color: #faf9fa;
-  }
+.btn-github {
+  background-color: #1a1919;
+  color: #d57df5;
+}
 
-      .zoom-effect {
-        overflow: hidden;
-        transition: transform 0.3s ease-out;
-      }
+.btn-github:hover {
+  background-color: #b456b0;
+  color: #faf9fa;
+}
 
-      .zoom-effect:hover {
-        transform: scale(1.1);
-      }
-      .one-third {
-  height: 70%; 
-  width:50%; 
-  
-}@media (max-width: 768px) {
-    .card {
-      display: flex;
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+.one-third {
+  height: 70%;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .card {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;    }
-}
-      @media screen and (orientation: portrait) {
-        body {
-          margin-left: 5%;
-          margin-right: 5%;
-        }
-
-        .order-md-last {
-          visibility: hidden;
-        }
-
-        .about-img img {
-          content: url("im1.jpeg");
-        }
-      }
-      #certification  h2 {
-        font-weight: bold;
-    color: #a216b5;
+    height: 100%;
   }
-  .navbar-brand {
+
+  .custom-width {
+    width: 100%;
+  }
+
+  .about-img img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .one-third {
+    width: 100%;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .order-md-last {
+    visibility: hidden;
+  }
+
+  .about-img img {
+    content: url("images/Renu.jpeg");
+  }
+}
+
+#certification h2 {
+  font-weight: bold;
+  color: #a216b5;
+}
+
+.navbar-brand {
   font-size: 24px;
   font-weight: bold;
   color: #a216b5;
   animation: color-switch 2s infinite;
 }
-/* Base image styling */
-.one-third {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .one-third {
-        width: 100%;
-        height: 300px; /* Set a specific height for the image container */
-    }
-    .custom-width {
-        width: 100%;
-    }
-}
-/* Add this CSS to style the subheading more bold */
-
 
 @keyframes color-switch {
   0% {
@@ -247,7 +226,6 @@
     color: #a216b5;
   }
 }
-
     </style>
 
   </head>
@@ -297,51 +275,41 @@
       </div>
     </nav>
     <section id="home-section" class="hero">
-      <div class="home-slider  owl-carousel">
-        <div class="slider-item ">
+      <div class="home-slider owl-carousel">
+        <div class="slider-item">
           <div class="overlay"></div>
           <div class="container">
             <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
               <div class="one-third js-fullheight order-md-last img custom-width" style="background-image:url(images/RK2.jpeg);">
                 <div class="overlay"></div>
               </div>
-              <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+              <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
                 <div class="text">
                   <span class="subheading">Hello!</span>
-                  <h1 class="mb-4 mt-3">I'm
-                    <span>Renuka Kale</span></h1>
-
-                  <!-- Element to contain animated typing -->
+                  <h1 class="mb-4 mt-3">I'm <span>Renuka Kale</span></h1>
+    
                   <span id="typing-animation"></span>
-
+    
                   <script>
-                    // Initialize the typing animation
                     const typingAnimationElement = document.getElementById('typing-animation');
-
-                    // Create an array of typing text
                     const typingTexts = ['Software Developer     ', 'FrontEnd Developer     ', 'BackEnd Developer    '];
-
-                    // Create a function to display the typing animation for a given text
+    
                     function playTypingAnimation(text) {
-                      // Loop through each character and add it to the element
                       for (let i = 0; i < text.length; i++) {
                         setTimeout(() => {
                           typingAnimationElement.textContent += text[i];
-                        }, i * 100); // Decreased delay to speed up the typing animation
+                        }, i * 100);
                       }
-
-                      // Once the animation is complete, reset the text and start over
+    
                       setTimeout(() => {
                         typingAnimationElement.textContent = '';
                         playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-                      }, text.length * 100); // Adjusted delay accordingly
+                      }, text.length * 100);
                     }
-
-                    // Start the typing animation loop
+    
                     playTypingAnimation(typingTexts[0]);
-                  </script><br><br>
-                  <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-                  <!-- <br> -->
+                  </script>
+                  <br><br>
                   <p>
                     <a href="https://www.linkedin.com/in/renukakale2908/" class="btn btn-primary py-3 px-4">My LinkedIn</a>
                     <a href="https://drive.google.com/drive/folders/1MCYLRdqbX2XXT4HpNgwbcJT-q3Sud6ae?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Resume</a>
@@ -353,19 +321,18 @@
         </div>
       </div>
     </section>
-
+    
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
       <div class="container">
         <div class="row">
           <div class="row d-flex align-items-stretch">
-            <!-- <div class="row d-flex"> -->
             <div class="col-md-6 col-lg-5 d-flex">
               <div class="img-about img d-flex align-items-stretch">
                 <div class="overlay">
                   <div class="row">
                     <div class="col-sm-6 col-md-5">
                       <div class="about-img">
-                        <img src="images\Renu.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+                        <img src="images/Renu.jpeg" class="img-fluid rounded b-shadow-a" alt="Renuka Kale">
                       </div>
                     </div>
                     <!-- Details next to profile image -->
@@ -536,9 +503,7 @@
               <span class="date">01/2022-07/2022</span>
               <h2>Intern Software Developer</h2>
               <span class="position">Technolite Software Solutions Pvt.Ltd</span>
-              <p class="mt-4">Implementing a GST Billing ERP System ensures uninterrupted production by managing stockouts across multiple locations.
-                Configuring it for various sectors enhances revenue. It controls operating costs and offers insights for better decisions, enhancing
-                business efficiency.
+              <p class="mt-4">Implementing a system ensures uninterrupted production by managing stockouts across multiple locations, enhancing revenue, controlling costs, and improving decision-making for enhanced business efficiency.
 
               </p>
             </div>
@@ -717,7 +682,7 @@
               </div>
               <h3 class="mb-4">Contact Number</h3>
               <p>
-                <a href="tel://">- +91-777-494-1648</a>
+                <a href="tel://+917774941648"> +91 777-494-1648</a>
               </p>
             </div>
           </div>
